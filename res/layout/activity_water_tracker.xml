@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="160dp"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Display Total Water Intake -->
+    <TextView
+        android:id="@+id/waterTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Water Intake: 0.00 Litres"
+        android:textSize="24sp"
+        android:layout_margin="22dp"
+        android:layout_gravity="center"/>
+
+    <!-- Water Intake Buttons -->
+    <Button
+        android:id="@+id/btn150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150ml" />
+
+    <Button
+        android:id="@+id/btn200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200ml" />
+
+    <Button
+        android:id="@+id/btn250"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250ml" />
+
+    <Button
+        android:id="@+id/btn300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300ml" />
+
+</LinearLayout>

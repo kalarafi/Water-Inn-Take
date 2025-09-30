@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/totalIntakeText"
+        android:text="Today's Intake: 0 ml"
+        android:textSize="24sp"
+        android:layout_marginTop="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/waterProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3000"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/recommendedIntakeText"
+        android:text="Recommended: -- ml"
+        android:textSize="24sp"
+        android:layout_marginTop="16p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginTop="22dp">
+
+        <Button
+            android:id="@+id/btn150ml"
+            android:text="150 ml"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn200ml"
+            android:text="200 ml"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn250ml"
+            android:text="250 ml"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn300ml"
+            android:text="300 ml"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button android:id="@+id/btnReminder"
+        android:text="Set Reminder"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:backgroundTint="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/btnReport"
+        android:text="View Report"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:backgroundTint="@color/greener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

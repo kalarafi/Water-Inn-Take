@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal: 0.00 L"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtTotalDrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drank: 0.00 L"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1000"
+        android:progress="0"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <Button android:id="@+id/btn150" android:text="150ml"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/btn200" android:text="200ml"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/btn250" android:text="250ml"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/btn300" android:text="300ml"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
